@@ -1,37 +1,28 @@
-# Game Project — Group 11
+# Group Lab 1 - Group 11
 
-A Python command-line arcade for Lab 1. Choose between a number guessing game and Rock-Paper-Scissors, play multiple rounds, switch games, or quit from the main menu.
+For this lab, our group made two Python games: a guessing game and rock-paper-scissors. The player chooses a game from the main menu and can play again, switch games, or quit.
 
-## Team and contributions
+## Group members
 
-| Team member | Contribution |
-| --- | --- |
-| Berk Enul | Guessing Game (`guessing.py`) and project integration |
-| Han Bhone Hset | Rock-Paper-Scissors (`rps.py`) |
-| Alex Sett | Main menu (`main.py`) |
+- Berk Enul: guessing game
+- Han Bhone Hset: rock-paper-scissors
+- Alex Sett: main menu
 
-## Run the project
+## How to run
 
-Python 3 is required. No third-party packages are needed. From the project folder, run:
+Open the project folder in a terminal and run:
 
 ```bash
 python3 main.py
 ```
 
-Select `1` for the Guessing Game, `2` for Rock-Paper-Scissors, or `3` to quit. After a round, enter `Y` to return to the menu or `N` to exit. You can also test the games individually with `python3 guessing.py` and `python3 rps.py`.
+Choose `1` for the guessing game, `2` for rock-paper-scissors, or `3` to quit.
 
-## Games
+## Files
 
-- **Guessing Game:** Guess a random number from 1 to 100 within five valid attempts. The game gives higher/lower hints and reveals the answer after a loss. Invalid input does not use an attempt.
-- **Rock-Paper-Scissors:** Choose `1` for paper, `2` for scissors, or `3` for rock. The computer chooses randomly, and the game reports the result and which move wins. Invalid choices are rejected.
+- `guessing.py` - guess a number between 1 and 100 in five tries
+- `rps.py` - play rock-paper-scissors against the computer
+- `main.py` - choose a game and play again
+- `test-cases/` - screenshots showing wins, losses, and invalid inputs
 
-## Project files
-
-| Path | Purpose |
-| --- | --- |
-| `main.py` | Welcome message, game selection, and replay/exit menu |
-| `guessing.py` | Number guessing game |
-| `rps.py` | Rock-Paper-Scissors game |
-| `test-cases/` | Terminal screenshots of wins, losses, ties, and invalid inputs |
-
-The screenshots in `test-cases/` show the required win and loss outcomes for both games, plus additional input checks. The games were also tested through `main.py` to verify switching and replay.
+We tested both games by themselves and through `main.py`.
